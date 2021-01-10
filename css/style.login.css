@@ -1,0 +1,68 @@
+body {
+  padding: 40px 0;
+}
+
+.titolo {
+  margin-bottom: 20px;
+  font-family: 'Raleway';
+  font-weight: 300;
+  color: var(--grigioF5);
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.diamond {
+  text-align: center;
+  font-size: 6em;
+  color: var(--grigioF5);
+}
+
+form.accesso {
+  width: 250px;
+  margin: 30px auto;
+}
+.login-title {
+  margin-bottom: 15px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  color: var(--grigioF5);
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.login-input {
+  display: block;
+  margin : 0 auto;
+  width: calc(90% - 30px);
+  height: 28px;
+  margin-bottom: 12px;
+  padding: 5px 15px;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+  font-size: 0.9em;
+  text-align: left;
+  border: none;
+  background-color: var(--grigioF5);
+  border-radius: 2px;
+}
+.login-button {
+  display: block;
+  margin : 0 auto;
+  width: 90%;
+  padding: 8px 15px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: rgb(31, 31, 31);
+  font-size: 0.95em;
+  text-align: center;
+  border: none;
+  background-color: var(--grigioF5);
+  border-radius: 2px;
+}
+.login-button > span:nth-child(1) {
+  float: left;
+}
+.login-button > span:nth-child(2) {
+  float: right;
+}

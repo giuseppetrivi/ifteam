@@ -1,25 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
-    padding: 0;
-    margin: 0;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  input:focus, select:focus, textarea:focus { outline: none; }
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  /*-----------------------------------------------------------------------------=NOME*/
+  padding: 0;
+  margin: 0;
+  background-color: rgb(43, 87, 122);
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+input:focus, select:focus, textarea:focus { outline: none; }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+:root {
+  --bgcolor: rgb(43, 87, 122);
+  --grigioF5: #f5f5f5;
+}
+/*-----------------------------------------------------------------------------=MENU*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: 10;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 0;
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--bgcolor);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 15px -3px #00000050;
+  color: var(--grigioF5);
+  z-index: 20;
+}
+.menu > h1 {
+  margin-bottom: 25px;
+  padding: 0 25px;
+  font-family: 'Raleway';
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.menu-option {
+  width: calc(100% - 40px);
+  padding: 12px 20px;
+  margin-bottom: 7px;
+}
+.menu-option > i {
+  float: left;
+  width: 21px;
+  font-size: 1.25em;
+}
+.menu-option > h6 {
+  float: left;
+  margin-left: 10px;
+  width: calc(100% - 10px - 21px);
+  font-family: 'Raleway';
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
 
 
-  /*-----------------------------------------------------------------------------=RESPONSIVE*/
-  @media (max-width: 575.98px) {}
-  @media (min-width: 576px) and (max-width: 767.98px) {}
-  @media (min-width: 768px) and (max-width: 991.98px) {}
-  @media (min-width: 992px) and (max-width: 1199.98px) {}
-  @media (min-width: 1200px) {}
+/*-----------------------------------------------------------------------------=RESPONSIVE*/
+@media (max-width: 575.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 1200px) {}
