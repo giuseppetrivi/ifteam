@@ -57,7 +57,7 @@ form.accesso {
   font-size: 0.95em;
   text-align: center;
   border: none;
-  background-color: var(--grigioF5);
+  background-color: #c4e5ff;
   border-radius: 2px;
 }
 .login-button > span:nth-child(1) {
@@ -65,4 +65,7 @@ form.accesso {
 }
 .login-button > span:nth-child(2) {
   float: right;
+}
+.login-button:focus {
+  outline: none;
 }

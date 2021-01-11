@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-  padding: 0;
+  padding: 25px 0;
   margin: 0;
   background-color: rgb(43, 87, 122);
 }
@@ -62,6 +62,9 @@ input:focus, select:focus, textarea:focus { outline: none; }
   padding: 12px 20px;
   margin-bottom: 7px;
 }
+.menu-option.selected {
+  background-color: #1123313b;
+}
 .menu-option > i {
   float: left;
   width: 21px;
@@ -73,14 +76,63 @@ input:focus, select:focus, textarea:focus { outline: none; }
   width: calc(100% - 10px - 21px);
   font-family: 'Raleway';
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.75px;
 }
 
+/*-----------------------------------------------------------------------------=TOP PAGE*/
+.top-page {
+  padding: 0 25px;
+  margin: 0 auto;
+  width: calc(100% - 50px);
+}
+.menu-opener {
+  float: left;
+  width: 30px;
+}
+.menu-opener > div {
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--grigioF5);
+  margin-bottom: 7px;
+}
+.menu-opener > div:nth-child(1) {
+  width: 70%;
+}
+.menu-opener > div:nth-child(2) {
+  width: 100%;
+}
+.menu-opener > div:nth-child(3) {
+  width: 82%;
+  margin-bottom: 0;
+}
+h1.top-titolo {
+  margin-left: 20px;
+  float: left;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: var(--grigioF5);
+  font-size: 23px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 3px;
+}
 
 /*-----------------------------------------------------------------------------=RESPONSIVE*/
 @media (max-width: 575.98px) {}
 @media (min-width: 576px) and (max-width: 767.98px) {}
-@media (min-width: 768px) and (max-width: 991.98px) {}
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-@media (min-width: 1200px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .top-page {
+    width: calc(80% - 50px);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .top-page {
+    width: calc(75% - 50px);
+  }
+}
+@media (min-width: 1200px) {
+  .top-page {
+    width: calc(70% - 50px);
+  }
+}
