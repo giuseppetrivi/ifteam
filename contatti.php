@@ -34,13 +34,54 @@
   </div>
 
   <!-- (menu-opener) con intestazione -->
-  <div class="top-page">
+  <div class="top-page clearfix">
     <div class="menu-opener">
       <div></div>
       <div></div>
       <div></div>
     </div>
     <h1 class="top-titolo">IF TEAM</h1>
+  </div>
+
+  <div class="sezione">
+    <h3 class="sezione-nome">Contatti &nbsp;<span>[76]</span></h3>
+    <p class="sezione-path">
+      <span>Contatti</span> >
+      <span>Trivisano Giuseppe</span>
+    </p>
+  </div>
+
+  <div class="container clearfix">
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
+    <div class="contatto">
+      ciao
+    </div>
   </div>
 
   <!-- container (con titolo sezione e il resto) -->
